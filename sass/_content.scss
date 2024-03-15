@@ -1,0 +1,128 @@
+.content{
+    background-color: $color-primary-dark;
+    grid-column: col-start 3 / full-end;
+    grid-template-rows: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 4rem repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+
+    padding: 3rem;
+    font-family: "Poppins", sans-serif;
+
+    &__title{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        color: #1F384C;
+        font-size: 2.2rem;
+    }
+
+    &__statistic{
+        background-color:#3C091D;
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        height: 30vh;
+    }
+    &__info{
+        background-color: #EC4899;
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        height: 30vh;
+    }
+}
+.heading{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    padding: 2rem;
+    height: 15vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 5rem;
+
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: .5rem;
+}
+
+    &__icon-box{
+        height: 5rem;
+        width: 5rem;
+        margin-right: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+}
+
+    &__gradient-1{
+        background: rgb(101,70,122);
+        background: linear-gradient(130deg, rgba(101,70,122,1) 0%, rgba(255,123,138,1) 100%);
+    }
+    &__gradient-2{
+        background: rgb(66,186,23);
+        background: linear-gradient(130deg, rgba(66,186,23,1) 0%, rgba(255,123,138,1) 100%);
+    }
+
+    &__gradient-3{
+        background: rgb(90,106,207);
+        background: linear-gradient(130deg, rgba(90,106,207,1) 0%, rgba(255,123,138,1) 100%);
+    }
+    &__gradient-4{
+        background: rgb(211,33,54);
+        background: linear-gradient(130deg, rgba(211,33,54,1) 0%, rgba(255,123,138,1) 100%);
+    }
+
+    &__icon{
+        color: #fff;
+    }
+
+    &__value{
+        color: #1F384C;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+    }
+
+    &__precent{
+        display: flex;
+        align-items: center;
+    }
+
+    &__info-icon{
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: #149D52;
+        margin: 0 0.3rem;
+    }
+
+    &__info-value{
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: #149D52;
+    }
+
+    &__name{
+        color: #80809C;
+        font-size: 1.2rem;
+    }
+
+}
+
+

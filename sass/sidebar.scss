@@ -1,0 +1,80 @@
+.sidebar{
+    background-color: #ECEEF2;
+    grid-column: full-start / col-end 2;
+    grid-template-rows: 2 / 3;
+    font-family: "Poppins", sans-serif;
+
+    &__content{
+        padding: 2rem;
+
+        &--menu{
+            &-title{
+                color: #B3BBC1;
+                margin-bottom: 1rem;
+            }
+
+            &-dashboad{
+                width: 100%;
+                font-size: 1.6rem;
+                padding: 1rem;
+                cursor: pointer;
+                color: #504178;
+                background-color: #CDCBDA;
+                border-radius: .5rem;
+                -webkit-border-radius: .5rem;
+                -moz-border-radius: .5rem;
+                -ms-border-radius: .5rem;
+                -o-border-radius: .5rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 2rem 0;
+            color: #767D87;
+            cursor: pointer;
+
+            &-text{
+                font-size: 1rem;
+                margin-right: auto;
+            }
+
+            &-icon{
+                font-size: 1.6rem;
+                margin-right: 1rem;
+            }
+        }
+
+
+    }
+        &--system{
+            &-title{
+                color: #B3BBC1;
+            }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 2rem 0;
+            color: #767D87;
+            cursor: pointer;
+
+            &-text{
+                font-size: 1rem;
+                margin-right: auto;
+            }
+
+            &-icon{
+                font-size: 1.6rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+}
